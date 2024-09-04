@@ -1,0 +1,31 @@
+en:
+  activerecord:
+    models:
+      book: book
+
+    attributes:
+      book:
+        author: Author
+        memo: Memo
+        image: Image
+        title: Title
+  books:
+    index:
+      book_list: Book list
+      show_this_book: Show this book
+      new_book: Create book
+    edit:
+      editing_book: Edit
+      show_this_book: Show this book
+      back_to_books: Back to books
+    show:
+      edit_this_book: Edit this book
+      back_to_books: Back to books
+      destroy_this_book: Destroy this book
+    new:
+      new_book: Create
+      back_to_books: Back to books
+    message:
+      create_success: The book was successfully created
+      update_success: The book was successfully updated
+      destroy_success: The book was successfully destroyed
