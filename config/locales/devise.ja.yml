@@ -10,3 +10,13 @@ ja:
     registrations:
       new:
         sign_up: "アカウント登録"
+    addcolumns:
+      postcode: "郵便番号"
+      address: "住所"
+      profile: "自己紹介"
+    views:
+      edit_profile: "プロフィールを編集する"
+      log_out: "ログアウト"
+      create_account: "アカウント登録"
+      log_in: "ログイン"
+      logged_in_as: "ログイン中"
