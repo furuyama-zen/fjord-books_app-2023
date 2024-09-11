@@ -1,0 +1,15 @@
+<h1>ユーザーの詳細</h1>
+
+Eメール<br />
+<li><%= @user.email %></li>
+郵便番号<br />
+<li><%= @user.postalcode %></li>
+住所<br />
+<li><%= @user.address %></li>
+自己紹介
+<li><%= @user.profile %></li>
+
+<nav class="page-nav">
+  <%= link_to t('views.common.back', name: i18n_pluralize(Book.model_name.human.downcase)), books_path %>
+  <%= link_to ('ユーザー一覧'), users_path %>
+</nav>
