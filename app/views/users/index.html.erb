@@ -2,9 +2,11 @@
 <% @users.each do |user| %>
   <li>
   <%= user.email %>
-  <%= link_to ('詳細'), user_path(user.id), class: "navbar-link" %>
+  <%= link_to t('devise.views.user_detail'), user_path(user.id), class: "navbar-link" %>
   <% end %>
 
 <nav class="page-nav">
   <%= link_to t('views.common.back', name: i18n_pluralize(Book.model_name.human.downcase)), books_path %>
 </nav>
+
+<%= paginate @users %>
