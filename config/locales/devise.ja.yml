@@ -20,3 +20,5 @@ ja:
       create_account: "アカウント登録"
       log_in: "ログイン"
       logged_in_as: "ログイン中"
+      user_list: "ユーザーの一覧"
+      user_detail: "ユーザーの詳細"

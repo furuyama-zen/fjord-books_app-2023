@@ -1,15 +1,13 @@
-<h1>ユーザーの詳細</h1>
+<h1><%= t('devise.views.user_detail') %></h1>
 
-Eメール<br />
-<li><%= @user.email %></li>
-郵便番号<br />
-<li><%= @user.postalcode %></li>
-住所<br />
-<li><%= @user.address %></li>
-自己紹介
-<li><%= @user.profile %></li>
+<ul>
+  <li>Eメール<br><%= @user.email %></br></br>
+  <li>郵便番号<br><%= @user.postalcode %></br></br>
+  <li>住所<br><%= @user.address %></br></br>
+  <li>自己紹介<br><%= @user.profile %></br></br>
+</ul>
 
 <nav class="page-nav">
   <%= link_to t('views.common.back', name: i18n_pluralize(Book.model_name.human.downcase)), books_path %>
-  <%= link_to ('ユーザー一覧'), users_path %>
+  <%= link_to t('devise.views.user_list'), users_path %>
 </nav>
