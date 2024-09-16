@@ -279,7 +279,7 @@ DEPENDENCIES
   carrierwave
   debug
   erb_lint
-  i18n_generators (~> 2.2, >= 2.2.2)
+  i18n_generators
   importmap-rails
   jbuilder
   puma
