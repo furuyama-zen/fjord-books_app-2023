@@ -1,9 +1,9 @@
-<h1><%= t '.new_book' %></h1>
+<h1><%= t ('views_title.new'), :name => (t 'activerecord.models.book') %></h1>
 
 <%= render "form", book: @book %>
 
 <br>
 
 <nav class="page-nav">
-  <%= link_to t('.back_to_books'), books_path %>
+  <%= link_to (t ('action.back_to_list'), :name => (t 'activerecord.models.book')), books_path %>
 </nav>
