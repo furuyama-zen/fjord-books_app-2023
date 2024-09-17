@@ -1,0 +1,25 @@
+ja:
+  activerecord:
+    models:
+      book: "本"
+
+    attributes:
+      book:
+        author: "著者"
+        memo: "メモ"
+        image: "イメージ"
+        title: "タイトル"
+  views_title:
+    list: "%{name}の一覧"
+    edit: "%{name}の編集"
+    new: "%{name}の作成"
+  action:
+    show: "%{name}の内容を見る"
+    new: "%{name}を作成する"
+    back_to_list: "%{name}の一覧に戻る"
+    edit: "%{name}を編集する"
+    destroy: "%{name}を削除する"
+  message:
+    create_success: "%{name}の作成に成功しました"
+    update_success: "%{name}の更新に成功しました"
+    destroy_success: "%{name}の削除に成功しました"

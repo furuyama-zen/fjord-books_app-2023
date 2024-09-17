@@ -1,0 +1,25 @@
+en:
+  activerecord:
+    models:
+      book: book
+
+    attributes:
+      book:
+        author: Author
+        memo: Memo
+        image: Image
+        title: Title
+  views_title:
+    list: "%{name} List"
+    edit: "Edit %{name}"
+    new: "Create %{name}"
+  action:
+    show: "Show this %{name}"
+    new: "Create %{name}"
+    back_to_list: "Back to %{name} list"
+    edit: "Edit %{name}"
+    destroy: "Destroy %{name}"
+  message:
+    create_success: "The %{name} was successfully created"
+    update_success: "The %{name} was successfully updated"
+    destroy_success: "The %{name} was successfully destroyed"
