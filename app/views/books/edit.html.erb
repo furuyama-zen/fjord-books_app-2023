@@ -1,10 +1,10 @@
-<h1><%= t ('views_title.edit'), :name => (t 'activerecord.models.book') %></h1>
+<h1><%= t('views_title.edit', name: t('activerecord.models.book')) %></h1>
 
 <%= render "form", book: @book %>
 
 <br>
 
 <nav class="page-nav">
-  <%= link_to (t ('action.show'), :name => (t 'activerecord.models.book')), @book %> |
-  <%= link_to (t ('action.back_to_list'), :name => (t 'activerecord.models.book')), books_path %>
+  <%= link_to t('action.show', name: t('activerecord.models.book')), @book %> |
+  <%= link_to t('action.back_to_list', name: t('activerecord.models.book')), books_path %>
 </nav>
