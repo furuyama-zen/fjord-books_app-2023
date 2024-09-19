@@ -1,10 +1,10 @@
 <h1><%= t('devise.views.user_detail') %></h1>
 
 <ul>
-  <li>Eメール<br><%= @user.email %></br></br>
-  <li>郵便番号<br><%= @user.postalcode %></br></br>
-  <li>住所<br><%= @user.address %></br></br>
-  <li>自己紹介<br><%= @user.profile %></br></br>
+  <li><%= User.human_attribute_name(:email) %><br><%= @user.email %></br></br>
+  <li><%= User.human_attribute_name(:postalcode) %><br><%= @user.postalcode %></br></br>
+  <li><%= User.human_attribute_name(:address) %><br><%= @user.address %></br></br>
+  <li><%= User.human_attribute_name(:profile) %><br><%= @user.profile %></br></br>
 </ul>
 
 <nav class="page-nav">
