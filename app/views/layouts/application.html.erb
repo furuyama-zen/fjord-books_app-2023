@@ -11,12 +11,12 @@
   </head>
   <p class="navbar-text float-right">
   <% if user_signed_in? %>
-    <%= t('devise.views.logged_in_as') %> <strong><%= current_user.email %></strong>.
-    <%= link_to t('devise.views.edit_profile'), edit_user_registration_path, class: "navbar-link" %> |
-    <%= link_to t('devise.views.log_out'), destroy_user_session_path, data: { turbo_method: :delete }, class: "navbar-link" %>
+    <%= t('views.layouts.application.logged_in_as', name: current_user.email) %>
+    <%= link_to t('views.layouts.application.edit_account'), edit_user_registration_path, class: "navbar-link" %> |
+    <%= link_to t('views.layouts.application.log_out'), destroy_user_session_path, data: { turbo_method: :delete }, class: "navbar-link" %>
   <% else %>
-    <%= link_to t('devise.views.create_account'), new_user_registration_path, class: "navbar-link" %> |
-    <%= link_to t('devise.views.log_in'), new_user_session_path, class: "navbar-link" %>
+    <%= link_to t('views.layouts.application.create_account'), new_user_registration_path, class: "navbar-link" %> |
+    <%= link_to t('views.layouts.application.log_in'), new_user_session_path, class: "navbar-link" %>
   <% end %>
   </p>
   <body class="<%= params[:action] %>">

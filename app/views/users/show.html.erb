@@ -1,4 +1,4 @@
-<h1><%= t('devise.views.user_detail') %></h1>
+<h1><%= t('views.common.title_show', name: i18n_pluralize(User.model_name.human)) %></h1>
 
 <ul>
   <li><%= User.human_attribute_name(:email) %><br><%= @user.email %></br></br>
@@ -9,5 +9,5 @@
 
 <nav class="page-nav">
   <%= link_to t('views.common.back', name: i18n_pluralize(Book.model_name.human.downcase)), books_path %>
-  <%= link_to t('devise.views.user_list'), users_path %>
+  <%= link_to t('views.common.back', name: i18n_pluralize(User.model_name.human)), users_path %>
 </nav>

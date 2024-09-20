@@ -1,8 +1,8 @@
-<h1><%= t('devise.views.user_list') %></h1>
+<h1><%= t('views.common.title_index', name: i18n_pluralize(User.model_name.human)) %></h1>
 <% @users.each do |user| %>
   <li>
   <%= user.email %>
-  <%= link_to t('devise.views.user_detail'), user_path(user.id), class: "navbar-link" %>
+  <%= link_to t('views.common.show', name: User.model_name.human.downcase), user_path(user.id) %>
   <% end %>
 
 <nav class="page-nav">
