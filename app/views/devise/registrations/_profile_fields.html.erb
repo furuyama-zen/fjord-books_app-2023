@@ -18,7 +18,7 @@
   <%= f.text_area :self_introduction %>
 </div>
 
-<% if @user.image.attached? %>
+<% if @user.errors[:image].blank? && @user.image.attached? %>
   <%= image_tag @user.image.variant(:thumb) %>
 <% end %>
 

@@ -9,8 +9,8 @@ class User < ApplicationRecord
   validate :check_image_content_type
 
   def check_image_content_type
-    return unless image.attached? && !image.content_type.in?(%w[image/jpeg image/png image/gif])
+    return if !image.attached? || (image.attached? && image.content_type.in?(%w[image/jpeg image/png image/gif]))
 
-    errors.add(User.human_attribute_name('image'), '：ファイル形式が、JPEG, PNG, GIFをアップロードしてください。')
+    errors.add(:image, :not_file_type, name: 'jpeg,png,gif')
   end
 end
