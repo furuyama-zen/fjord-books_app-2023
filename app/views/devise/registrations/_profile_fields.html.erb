@@ -18,13 +18,11 @@
   <%= f.text_area :self_introduction %>
 </div>
 
-<% if @user.image.attached? && @user.image.content_type.in?(%w[image/jpeg image/png image/gif]) %>
-  <p>
-    <%= image_tag @user.image.variant(resize_to_limit: [100, 100]) %>
-  </p>
+<% if @user.image.attached? %>
+  <%= image_tag @user.image.variant(:thumb) %>
 <% end %>
 
 <div class="field">
-  <%= f.label t('activestorage.image') %><br />
+  <%= f.label :image %><br />
   <%= f.file_field :image %>
 </div>
