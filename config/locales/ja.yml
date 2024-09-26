@@ -192,6 +192,7 @@ ja:
       title_index: "%{name}の一覧"
       title_new: "%{name}の新規作成"
       title_edit: "%{name}の編集"
+      title_show: "%{name}の詳細"
       error: エラー
       validation_error: "%{errors}があるため、この%{name}は保存できませんでした"
     pagination:
@@ -200,6 +201,13 @@ ja:
       previous: '‹ 前'
       next: '次 ›'
       truncate: '…'
+    layouts:
+      application:
+        log_in: "ログイン"
+        log_out: "ログアウト"
+        logged_in_as: "%{name}でログイン中"
+        edit_account: "アカウントを編集"
+        create_account: "アカウント登録"
   controllers:
     common:
       notice_create: "%{name}が作成されました。"
